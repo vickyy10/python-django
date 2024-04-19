@@ -7,5 +7,15 @@ doctors
 
 {% block content %}
 
-doctors  pageee
+{% for i in dict1 %}
+
+<div   style="width: 250px;  margin: 20px; background-color: rgb(201, 201, 253); padding: 20px; "  >
+<img  style="height: 100px; width: 100px; object-fit: contain; "    src="{{i.doc_image.url}}" alt="Example Image">
+<h1>{{i.doc_name}}</h1>
+<h2>{{ i.doc_spec }}</h2>
+</div>
+
+
+{% endfor %}
+
 {%endblock%}

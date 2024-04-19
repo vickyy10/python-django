@@ -7,16 +7,11 @@ department
 
 {% block content %}
 
-<h1>our  department</h1>
+<h1 style="display: flex; justify-content: center;" >our  department</h1>
 
-<hr>
 
-{% for i in dict %}
-<div>
-    <h1>{{i.dep_name}}</h1>
-    <p>{{i.dep_description}}</p>
-</div>
 
-{%endfor%}
+
+<h2 > * {{dict.dep_name}}</h2>
 
 {%endblock%}
